@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+    p {
+        color: whitesmoke;
+    }
+
+    a {
+        color: lightblue;
+    }
+    </style>
 </head>
-<body>
+<body background="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1653&q=80">
     <a href="index.html">Home</a>
 
     <hr>
@@ -21,10 +31,18 @@
         </p>
 
         <p>
-            <textarea name="message" id="message" placeholder="Write your message here" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" placeholder="Write your message here" cols="35" rows="10"></textarea>
         </p>
 
-        <button type="submit">Send</button>
+        <button type="submit" onclick="sendMail();">Send</button>
     </form>
+
+    <script>
+        function sendMail() {
+            alert("Thank you for your feedback.");
+            document.querySelector("#name").value("");
+            document.querySelector("#message").value("");
+        }
+    </script>
 </body>
 </html>
