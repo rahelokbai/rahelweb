@@ -1,0 +1,22 @@
+body {
+    background-color: darkolivegreen;
+    color: lightcyan;
+    text-shadow: 1px 1px black;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightskyblue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
